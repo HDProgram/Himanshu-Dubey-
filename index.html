@@ -9,7 +9,7 @@
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
-        <title>Portfolio website complete</title>
+        <title>Himanshu Dubey | Electronics Engineer</title>
     </head>
     <body>
         <!--===== HEADER =====-->
@@ -23,8 +23,9 @@
                     <ul class="nav__list">
                         <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
                         <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li> <!-- New Projects Tab -->
-                        <li class="nav__item"><a href="#work" class="nav__link">Certification</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li> <!-- New Skills Tab -->
+                        <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Certifications</a></li>
                         <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                     </ul>
                 </div>
@@ -39,9 +40,12 @@
             <!--===== HOME =====-->
             <section class="home bd-grid" id="home">
                 <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">Himanshu Dubey </span><br>  A Student (VIT) </h1>
+                    <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">Himanshu Dubey</span><br>Electronics Engineer</h1>
 
-                    <a href="#contact" class="button">Contact</a>
+                    <div class="home__buttons">
+                        <a href="#contact" class="button">Contact Me</a>
+                        <a href="#" class="button button-alt">Download CV</a>
+                    </div>
                 </div>
 
                 <div class="home__social">
@@ -66,18 +70,74 @@
 
             <!--===== ABOUT =====-->
             <section class="about section" id="about">
-                <h2 class="section-title">About</h2>
+                <h2 class="section-title">About Me</h2>
 
                 <div class="about__container bd-grid">
                     <div class="about__img">
-                        <img src="assets/img/about.jpg" alt="">
+                        <img src="assets/img/about.jpg" alt="Himanshu Dubey">
                     </div>
                     
                     <div>
-                        <h2 class="about__subtitle">I'am Himanshu Dubey</h2>
-                        <p class="about__text">I am Himanshu Tribhuvannath Dubey, an Electronics Engineering student at Vidyalankar Institute of Technology with a 
-minor in Data Science. I am a proactive Electronics Engineering student at VIT with foundational skills in Python and web development. Known for quick learning and adaptability, I manage projects effectively, applying theory to practice. My interest in geopolitics enriches my problem-solving, and I am committed to continuous learning and innovation in.</p>           
+                        <h2 class="about__subtitle">I am Himanshu Dubey</h2>
+                        <p class="about__text">Electronics Engineering student at Vidyalankar Institute of Technology with a minor in Data Science. I combine technical knowledge with practical skills in Python and web development. I'm passionate about drone technology and automation, with a strong foundation in project management and problem-solving.</p>
+                        <p class="about__text">My interest in geopolitics gives me a unique perspective on global technological trends. I'm committed to innovation and continuous learning, with a goal to contribute meaningfully to the electronics and data science fields.</p>           
                     </div>                                   
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills__container bd-grid">
+                    <div>
+                        <h2 class="skills__subtitle">Professional Skills</h2>
+                        
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-python skills__icon'></i>
+                                <span class="skills__name">Python</span>
+                            </div>
+                            <div class="skills__bar skills__python"></div>
+                            <div><span class="skills__percentage">85%</span></div>
+                        </div>
+                        
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bx-code skills__icon'></i>
+                                <span class="skills__name">Web Development</span>
+                            </div>
+                            <div class="skills__bar skills__web"></div>
+                            <div><span class="skills__percentage">70%</span></div>
+                        </div>
+                        
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bx-chip skills__icon'></i>
+                                <span class="skills__name">Electronics</span>
+                            </div>
+                            <div class="skills__bar skills__electronics"></div>
+                            <div><span class="skills__percentage">90%</span></div>
+                        </div>
+                        
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bx-data skills__icon'></i>
+                                <span class="skills__name">Data Science</span>
+                            </div>
+                            <div class="skills__bar skills__data"></div>
+                            <div><span class="skills__percentage">75%</span></div>
+                        </div>
+                        
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bx-joystick skills__icon'></i>
+                                <span class="skills__name">Drone Technology</span>
+                            </div>
+                            <div class="skills__bar skills__drone"></div>
+                            <div><span class="skills__percentage">80%</span></div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -88,32 +148,46 @@ minor in Data Science. I am a proactive Electronics Engineering student at VIT w
                 <div class="projects__container bd-grid">
                     <!-- Project 1 -->
                     <div class="projects__item">
-                        <img src="assets/img/project1.jpg" alt="" class="projects__img">
+                        <img src="assets/img/project1.jpg" alt="Drone KeyCam Project" class="projects__img">
                         <div class="projects__info">
                             <h3 class="projects__title">KEYCAM FOR DRONE SYSTEM</h3>
-                            <p class="projects__description">This script controls a drone using keyboard inputs while streaming its camera feed. It uses subprocess to run video capture and displays the feed with OpenCV. Keyboard events are mapped to various drone control actions, and the webcam stream starts/stops with the 'v' key. The program runs until the 'e' key is pressed to exit.</p>
-                            <a href=" https://github.com/HDProgram/KEYCAM" class="projects__link" target="_blank">View Project</a>
+                            <div class="projects__tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">OpenCV</span>
+                                <span class="tech-tag">Subprocess</span>
+                            </div>
+                            <p class="projects__description">Advanced drone control system using keyboard inputs with real-time camera feed. Implements keyboard event mapping for precise drone movements and commands, with integrated video capture and display using OpenCV.</p>
+                            <a href="https://github.com/HDProgram/KEYCAM" class="projects__link" target="_blank">View Project <i class='bx bx-right-arrow-alt'></i></a>
                         </div>
                     </div>
 
                     <!-- Project 2 -->
                     <div class="projects__item">
-                        <img src="assets/img/project2.jpg" alt="" class="projects__img">
+                        <img src="assets/img/project2.jpg" alt="QR Code Drone Control" class="projects__img">
                         <div class="projects__info">
-                            <h3 class="projects__title"> QR-CONTROL FOR DRONE SYSTEM </h3>
-                            <p class="projects__description">THE DRONE WILL TAKE COMMAND OF THE CODES QR Code Actions: Point the camera at a QR code to perform actions. The following QR codes are recognized:
-'arm': Arms the drone. 'disarm': Disarms the drone. 'land': Lands the drone. 'takeoff': Takes off the drone. Keyboard Control: Use the following keys to control the drone.</p>
-                            <a href="https://github.com/HDProgram/QR-CONTROl " class="projects__link" target="_blank">View Project</a>
+                            <h3 class="projects__title">QR-CONTROL FOR DRONE SYSTEM</h3>
+                            <div class="projects__tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Computer Vision</span>
+                                <span class="tech-tag">QR Recognition</span>
+                            </div>
+                            <p class="projects__description">Innovative drone control system using QR code recognition for command execution. Supports core drone operations (arm, disarm, takeoff, land) via QR codes, with additional keyboard controls for manual override.</p>
+                            <a href="https://github.com/HDProgram/QR-CONTROl" class="projects__link" target="_blank">View Project <i class='bx bx-right-arrow-alt'></i></a>
                         </div>
                     </div>
 
                     <!-- Project 3 -->
                     <div class="projects__item">
-                        <img src="assets/img/project3.jpg" alt="" class="projects__img">
+                        <img src="assets/img/project3.jpg" alt="Mouse Controller for Drone" class="projects__img">
                         <div class="projects__info">
                             <h3 class="projects__title">MOUSE CONTROLLER FOR DRONE SYSTEM</h3>
-                            <p class="projects__description">Python script that allows users to control a drone using mouse inputs. It leverages the pynput library for mouse events and a custom drone control library called plutocontrol. The script supports various drone commands such as arming, taking off, landing, and directional movements based on mouse actions.</p>
-                            <a href="https://github.com/HDProgram/MOUSE-CONTROLLER-FOR-DRONE-" class="projects__link" target="_blank">View Project</a>
+                            <div class="projects__tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">pynput</span>
+                                <span class="tech-tag">plutocontrol</span>
+                            </div>
+                            <p class="projects__description">Intuitive drone control interface using mouse inputs. Leverages the pynput library for precise mouse event tracking and custom plutocontrol library for drone command execution. Supports full directional control and operational commands.</p>
+                            <a href="https://github.com/HDProgram/MOUSE-CONTROLLER-FOR-DRONE-" class="projects__link" target="_blank">View Project <i class='bx bx-right-arrow-alt'></i></a>
                         </div>
                     </div>
                 </div>
@@ -121,40 +195,83 @@ minor in Data Science. I am a proactive Electronics Engineering student at VIT w
 
             <!--===== WORK =====-->
             <section class="work section" id="work">
-                <h2 class="section-title">Certifications & Internships </h2>
+                <h2 class="section-title">Certifications & Internships</h2>
 
                 <div class="work__container bd-grid">
-                    <a href="" class="work__img">
-                        <img src="assets/img/work1.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work2.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work3.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work4.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work5.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work6.jpg" alt="">
-                    </a>
+                    <div class="work__img">
+                        <img src="assets/img/work1.jpg" alt="Python Certification">
+                        <div class="work__caption">Python Programming Certification</div>
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/work2.jpg" alt="Web Development Certification">
+                        <div class="work__caption">Web Development Course</div>
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/work3.jpg" alt="Electronics Internship">
+                        <div class="work__caption">Electronics Engineering Internship</div>
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/work4.jpg" alt="Data Science Certification">
+                        <div class="work__caption">Data Science Foundation</div>
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/work5.jpg" alt="Drone Technology Workshop">
+                        <div class="work__caption">Drone Technology Workshop</div>
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/work6.jpg" alt="Project Management Certification">
+                        <div class="work__caption">Project Management Certification</div>
+                    </div>
                 </div>
             </section>
 
             <!--===== CONTACT =====-->
             <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
+                <h2 class="section-title">Contact Me</h2>
 
                 <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="REACH ME" class="contact__button button">
+                    <div class="contact__info">
+                        <h3 class="contact__subtitle">Get in touch</h3>
+                        <p class="contact__text">Feel free to reach out for collaborations, opportunities, or just to say hello!</p>
+                        
+                        <div class="contact__info-item">
+                            <i class="fas fa-map-marker-alt contact__icon"></i>
+                            <span>Mumbai, India</span>
+                        </div>
+                        
+                        <div class="contact__info-item">
+                            <i class="fas fa-envelope contact__icon"></i>
+                            <span>dubeyhimanshu535@gmail.com</span>
+                        </div>
+                        
+                        <div class="contact__info-item">
+                            <i class="fas fa-phone contact__icon"></i>
+                            <span>+91 9821128187</span>
+                        </div>
+                    </div>
+                    
+                    <form action="#" method="POST" class="contact__form" id="contactForm">
+                        <div class="form__group">
+                            <input type="text" placeholder="Name" class="contact__input" required>
+                            <span class="form__error" id="nameError"></span>
+                        </div>
+                        
+                        <div class="form__group">
+                            <input type="email" placeholder="Email" class="contact__input" required>
+                            <span class="form__error" id="emailError"></span>
+                        </div>
+                        
+                        <div class="form__group">
+                            <input type="text" placeholder="Subject" class="contact__input" required>
+                            <span class="form__error" id="subjectError"></span>
+                        </div>
+                        
+                        <div class="form__group">
+                            <textarea name="message" id="message" cols="0" rows="10" class="contact__input" placeholder="Your Message" required></textarea>
+                            <span class="form__error" id="messageError"></span>
+                        </div>
+                        
+                        <button type="submit" class="contact__button button">Send Message <i class='bx bx-send'></i></button>
                     </form>
                 </div>
             </section>
@@ -162,16 +279,323 @@ minor in Data Science. I am a proactive Electronics Engineering student at VIT w
 
         <!--===== FOOTER =====-->
         <footer class="footer">
-            <p class="footer__title">HIMANSHU</p>
+            <p class="footer__title">HIMANSHU DUBEY</p>
             <div class="footer__social">
                 <a href="https://www.linkedin.com/in/himanshu-dubey-b974a627a" class="footer__icon" target="_blank"><i class='bx bxl-linkedin'></i></a>
                 <a href="https://github.com/HDProgram" class="footer__icon" target="_blank"><i class='bx bxl-github'></i></a>
                 <a href="mailto:dubeyhimanshu535@gmail.com" class="footer__icon" target="_blank"><i class="fas fa-envelope"></i></a>
                 <a href="tel:+919821128187" class="footer__icon" target="_blank"><i class="fas fa-phone-alt"></i></a>
             </div>
+            
+            <div class="footer__mode">
+                <button id="toggleMode" class="mode-toggle">
+                    <i class='bx bx-moon'></i>
+                </button>
+            </div>
+            
             <p class="footer__copy">&#169; 2025 Himanshu Dubey. All rights reserved.</p>
         </footer>
 
         <script src="assets/js/main.js"></script>
     </body>
-</html> 
+</html><!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+        <title>Himanshu Dubey | Electronics Engineer</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">HIMANSHU</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li> <!-- New Skills Tab -->
+                        <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Certifications</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">Himanshu Dubey</span><br>Electronics Engineer</h1>
+
+                    <div class="home__buttons">
+                        <a href="#contact" class="button">Contact Me</a>
+                        <a href="#" class="button button-alt">Download CV</a>
+                    </div>
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/himanshu-dubey-b974a627a" class="home__social-icon" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/HDProgram" class="home__social-icon" target="_blank"><i class='bx bxl-github'></i></a>
+                    <a href="mailto:dubeyhimanshu535@gmail.com" class="home__social-icon" target="_blank"><i class="fas fa-envelope"></i></a>
+                    <a href="tel:+919821128187" class="home__social-icon" target="_blank"><i class="fas fa-phone-alt"></i></a>
+                </div>
+
+                <div class="home__img">
+                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                            <image class="home__blob-img" x="50" y="60" href="assets/img/perfil.png"/>
+                        </g>
+                    </svg>
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section" id="about">
+                <h2 class="section-title">About Me</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/about.jpg" alt="Himanshu Dubey">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">I am Himanshu Dubey</h2>
+                        <p class="about__text">Electronics Engineering student at Vidyalankar Institute of Technology with a minor in Data Science. I combine technical knowledge with practical skills in Python and web development. I'm passionate about drone technology and automation, with a strong foundation in project management and problem-solving.</p>
+                        <p class="about__text">My interest in geopolitics gives me a unique perspective on global technological trends. I'm committed to innovation and continuous learning, with a goal to contribute meaningfully to the electronics and data science fields.</p>           
+                    </div>                                   
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills__container bd-grid">
+                    <div>
+                        <h2 class="skills__subtitle">Professional Skills</h2>
+                        
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-python skills__icon'></i>
+                                <span class="skills__name">Python</span>
+                            </div>
+                            <div class="skills__bar skills__python"></div>
+                            <div><span class="skills__percentage">85%</span></div>
+                        </div>
+                        
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bx-code skills__icon'></i>
+                                <span class="skills__name">Web Development</span>
+                            </div>
+                            <div class="skills__bar skills__web"></div>
+                            <div><span class="skills__percentage">70%</span></div>
+                        </div>
+                        
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bx-chip skills__icon'></i>
+                                <span class="skills__name">Electronics</span>
+                            </div>
+                            <div class="skills__bar skills__electronics"></div>
+                            <div><span class="skills__percentage">90%</span></div>
+                        </div>
+                        
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bx-data skills__icon'></i>
+                                <span class="skills__name">Data Science</span>
+                            </div>
+                            <div class="skills__bar skills__data"></div>
+                            <div><span class="skills__percentage">75%</span></div>
+                        </div>
+                        
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bx-joystick skills__icon'></i>
+                                <span class="skills__name">Drone Technology</span>
+                            </div>
+                            <div class="skills__bar skills__drone"></div>
+                            <div><span class="skills__percentage">80%</span></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== PROJECTS =====-->
+            <section class="projects section" id="projects">
+                <h2 class="section-title">Projects</h2>
+
+                <div class="projects__container bd-grid">
+                    <!-- Project 1 -->
+                    <div class="projects__item">
+                        <img src="assets/img/project1.jpg" alt="Drone KeyCam Project" class="projects__img">
+                        <div class="projects__info">
+                            <h3 class="projects__title">KEYCAM FOR DRONE SYSTEM</h3>
+                            <div class="projects__tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">OpenCV</span>
+                                <span class="tech-tag">Subprocess</span>
+                            </div>
+                            <p class="projects__description">Advanced drone control system using keyboard inputs with real-time camera feed. Implements keyboard event mapping for precise drone movements and commands, with integrated video capture and display using OpenCV.</p>
+                            <a href="https://github.com/HDProgram/KEYCAM" class="projects__link" target="_blank">View Project <i class='bx bx-right-arrow-alt'></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="projects__item">
+                        <img src="assets/img/project2.jpg" alt="QR Code Drone Control" class="projects__img">
+                        <div class="projects__info">
+                            <h3 class="projects__title">QR-CONTROL FOR DRONE SYSTEM</h3>
+                            <div class="projects__tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Computer Vision</span>
+                                <span class="tech-tag">QR Recognition</span>
+                            </div>
+                            <p class="projects__description">Innovative drone control system using QR code recognition for command execution. Supports core drone operations (arm, disarm, takeoff, land) via QR codes, with additional keyboard controls for manual override.</p>
+                            <a href="https://github.com/HDProgram/QR-CONTROl" class="projects__link" target="_blank">View Project <i class='bx bx-right-arrow-alt'></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="projects__item">
+                        <img src="assets/img/project3.jpg" alt="Mouse Controller for Drone" class="projects__img">
+                        <div class="projects__info">
+                            <h3 class="projects__title">MOUSE CONTROLLER FOR DRONE SYSTEM</h3>
+                            <div class="projects__tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">pynput</span>
+                                <span class="tech-tag">plutocontrol</span>
+                            </div>
+                            <p class="projects__description">Intuitive drone control interface using mouse inputs. Leverages the pynput library for precise mouse event tracking and custom plutocontrol library for drone command execution. Supports full directional control and operational commands.</p>
+                            <a href="https://github.com/HDProgram/MOUSE-CONTROLLER-FOR-DRONE-" class="projects__link" target="_blank">View Project <i class='bx bx-right-arrow-alt'></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== WORK =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">Certifications & Internships</h2>
+
+                <div class="work__container bd-grid">
+                    <div class="work__img">
+                        <img src="assets/img/work1.jpg" alt="Python Certification">
+                        <div class="work__caption">Python Programming Certification</div>
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/work2.jpg" alt="Web Development Certification">
+                        <div class="work__caption">Web Development Course</div>
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/work3.jpg" alt="Electronics Internship">
+                        <div class="work__caption">Electronics Engineering Internship</div>
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/work4.jpg" alt="Data Science Certification">
+                        <div class="work__caption">Data Science Foundation</div>
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/work5.jpg" alt="Drone Technology Workshop">
+                        <div class="work__caption">Drone Technology Workshop</div>
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/work6.jpg" alt="Project Management Certification">
+                        <div class="work__caption">Project Management Certification</div>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact Me</h2>
+
+                <div class="contact__container bd-grid">
+                    <div class="contact__info">
+                        <h3 class="contact__subtitle">Get in touch</h3>
+                        <p class="contact__text">Feel free to reach out for collaborations, opportunities, or just to say hello!</p>
+                        
+                        <div class="contact__info-item">
+                            <i class="fas fa-map-marker-alt contact__icon"></i>
+                            <span>Mumbai, India</span>
+                        </div>
+                        
+                        <div class="contact__info-item">
+                            <i class="fas fa-envelope contact__icon"></i>
+                            <span>dubeyhimanshu535@gmail.com</span>
+                        </div>
+                        
+                        <div class="contact__info-item">
+                            <i class="fas fa-phone contact__icon"></i>
+                            <span>+91 9821128187</span>
+                        </div>
+                    </div>
+                    
+                    <form action="#" method="POST" class="contact__form" id="contactForm">
+                        <div class="form__group">
+                            <input type="text" placeholder="Name" class="contact__input" required>
+                            <span class="form__error" id="nameError"></span>
+                        </div>
+                        
+                        <div class="form__group">
+                            <input type="email" placeholder="Email" class="contact__input" required>
+                            <span class="form__error" id="emailError"></span>
+                        </div>
+                        
+                        <div class="form__group">
+                            <input type="text" placeholder="Subject" class="contact__input" required>
+                            <span class="form__error" id="subjectError"></span>
+                        </div>
+                        
+                        <div class="form__group">
+                            <textarea name="message" id="message" cols="0" rows="10" class="contact__input" placeholder="Your Message" required></textarea>
+                            <span class="form__error" id="messageError"></span>
+                        </div>
+                        
+                        <button type="submit" class="contact__button button">Send Message <i class='bx bx-send'></i></button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">HIMANSHU DUBEY</p>
+            <div class="footer__social">
+                <a href="https://www.linkedin.com/in/himanshu-dubey-b974a627a" class="footer__icon" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/HDProgram" class="footer__icon" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="mailto:dubeyhimanshu535@gmail.com" class="footer__icon" target="_blank"><i class="fas fa-envelope"></i></a>
+                <a href="tel:+919821128187" class="footer__icon" target="_blank"><i class="fas fa-phone-alt"></i></a>
+            </div>
+            
+            <div class="footer__mode">
+                <button id="toggleMode" class="mode-toggle">
+                    <i class='bx bx-moon'></i>
+                </button>
+            </div>
+            
+            <p class="footer__copy">&#169; 2025 Himanshu Dubey. All rights reserved.</p>
+        </footer>
+
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
